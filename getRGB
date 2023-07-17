@@ -1,0 +1,84 @@
+//getRGB(255, 255, 0)
+//255 --> ff를 출력하는 방법은?
+//255를 16으로 나눈 몫과 나머지가 15 일때 f로 출력(16진법에 따라 출력)
+// getRGB값을 넣었을 때
+//추가과제 : 1. fun getRGB : String (문자열로 출력)되는 방법
+//2. println(getRGB(255,255,0) 으로 출력
+// 힌트 : 함수 안의 println이 모두 사라지게 될 것
+
+fun getRGB(red: Int, green: Int, blue: Int) {
+    var a = red % 16
+    var b = red / 16
+    var c = green % 16
+    var d = green / 16
+    var e = blue % 16
+    var f = blue / 16
+
+    when (a) {
+        15 -> print("#f")
+        14 -> print("#e")
+        13 -> print("#d")
+        12 -> print("#c")
+        11 -> print("#b")
+        10 -> print("#a")
+        else -> print("#$a")
+    }
+
+    when (b) {
+        15 -> print("f")
+        14 -> print("e")
+        13 -> print("d")
+        12 -> print("c")
+        11 -> print("b")
+        10 -> print("a")
+        else -> print("$b")
+
+    }
+    when (c) {
+        15 -> print("f")
+        14 -> print("e")
+        13 -> print("d")
+        12 -> print("c")
+        11 -> print("b")
+        10 -> print("a")
+        else -> print("$c")
+    }
+
+    when (d) {
+        15 -> print("f")
+        14 -> print("e")
+        13 -> print("d")
+        12 -> print("c")
+        11 -> print("b")
+        10 -> print("a")
+        else -> print("$d")
+    }
+
+    when (e) {
+        15 -> print("f")
+        14 -> print("e")
+        13 -> print("d")
+        12 -> print("c")
+        11 -> print("b")
+        10 -> print("a")
+        else -> print("$e")
+    }
+
+    when (f) {
+        15 -> print("f")
+        14 -> print("e")
+        13 -> print("d")
+        12 -> print("c")
+        11 -> print("b")
+        10 -> print("a")
+        else -> print("$f")
+    }
+
+}
+
+fun main() {
+    println(getRGB(255, 255, 0)) // =#ffff00kotlin.Unit
+}
+
+
+
